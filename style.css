@@ -1,0 +1,167 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 21%;
+    height: 500px;
+    margin: 200px auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.69);
+}
+.contacts_header{
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 2px solid black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 13%;
+}
+.contacts_header > .icon{
+    display: block;
+    position: relative;
+    z-index: 10;
+    border: 0;
+    height: 40px;
+    width: 40px;
+    border-radius: 100px;
+    margin: auto 0 auto 30px;
+    transition: 0.3s all;
+    background: rgba(255, 255, 255, 0.99);
+}
+.contacts_header > .icon:hover{
+    box-shadow: 0 2px 15px black;
+}
+.contacts_header > span{
+    display: block;
+    color: white;
+    margin: auto 20px;
+    width: 50%;
+    font-size: 1.8rem;
+    text-align: center;
+}
+.icon > img{
+    cursor: pointer;
+    padding-top: 19%;
+    padding-left: 17%;
+}
+.contacts_header > .searchbox{
+    height: 45%;
+    width: 200px;
+    margin: auto 0 auto 60px;
+    border-radius: 20px;
+    border: 0;
+}
+.searchbox::placeholder, .searchbox input{
+    padding-left: 15px;
+}
+.contacts_container, .add_form{
+    height: 75%;
+    overflow: auto;
+}
+.contact{
+    display: flex;
+    margin-top: 5px;
+    height: 13%;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+}
+.contact > .avatar{
+    margin: 5px 0 0 10px;
+}
+.contact > .contact_info{
+    margin: 0 0 0 10px;
+}
+.contact > .contact_info > .info_name, .contact > .contact_info > .info_phone{
+
+    font-size: 1.3rem;
+}
+.contact > .contact_info > .info_phone{
+    display: block;
+    margin-top: 5px;
+}
+.contact > .contact_actions{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    left: 60%;
+}
+.contact > .contact_actions > .action{
+    cursor: pointer;
+    margin-top: 5px;
+    width: 20px;
+    height: 20px;
+}
+.delete{
+    border: 0;
+    background: url("img/delete.png") no-repeat;
+    background-size: contain;
+}
+.elected{
+    width: 30px!important;
+    height: 30px!important;
+    border: 0;
+    margin-left: 3px;
+    background: url("img/unliked.png") no-repeat;
+    background-size: contain;
+}
+.addcontact, .addcontact:hover{
+    text-decoration: none;
+    border-top: 2px solid black;
+    text-align: center;
+    color: black;
+    font-size: 1.6rem;
+    background: none;
+    border-bottom: 0;
+    border-right: 0;
+    border-left: 0;
+    display: block;
+    height: 10%;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    cursor: pointer;
+}
+.addcontact > span{
+    margin: 2% auto 0 auto;
+    display: block;
+    cursor: pointer;
+}
+.add_form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    padding: 0 60px;
+}
+.name, .phone{
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+.elected_label{
+    font-size: 1.5rem;
+}
+.add_form > .form_unit, .add_form > .form_unit_check{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.add_form > .form_unit > input, .add_form > .form_unit_check > input {
+    height: 30px;
+    border-radius: 5px;
+    border: 0;
+}
+.add_form > .form_unit_check{
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.add_form > .form_unit_check > input{
+    height: 20px;
+    width: 20px;
+    margin-right: 30px;
+}

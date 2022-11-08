@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.6.1.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script defer src="js/script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Phone book</title>
+</head>
+<body onload="loadContacts()">
+    <div class="contacts wrapper">
+        <div class="contacts_header">
+            <a href="index.html" class="icon">
+                <img src="img/phone-call.png" width="25" height="25">
+            </a>
+            <input type="text" class="searchbox" placeholder="Search">
+        </div>
+        <div class="contacts_container">
+            <div class="contact">
+            <img class="avatar" src="img/user.png" width="50" height="50">
+            <div class="contact_info">
+                <span id="name" class="info_name">Name</span><br>
+                <span class="info_phone">Phone</span>
+            </div>
+            <div class="contact_actions">
+                <button onclick="delete()" class="action delete"></button>
+                <button class="action elected"></button>
+            </div >
+        </div>
+        </div>
+        <a href="addcontact.html" class="addcontact">
+            <span>Добавить</span>
+        </a>
+    </div>
+</body>
+</html>
